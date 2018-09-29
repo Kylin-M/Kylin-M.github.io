@@ -1,0 +1,136 @@
+#hobby {
+    /*background-color: #333333;*/
+}
+
+#hobby p {
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 33px;
+}
+
+#hobby #div1 {
+    position: absolute;
+    top: 50px;
+}
+
+#hobby #div2 {
+    position: absolute;
+    top: 50px;
+}
+
+#hobby #div3 {
+    position: absolute;
+    top: 50px;
+}
+
+#hobby #div4 {
+    position: absolute;
+    top: 50px;
+}
+
+#hobby #div5 {
+    position: absolute;
+    top: 50px;
+}
+
+#hobby #div2 #draw_outer {
+    margin: 10px auto;
+    width: 450px;
+    /*height: 450px;*/
+    /*background-color: yellowgreen;*/
+}
+
+#hobby #div2 #draw_outer div {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 180px;
+    height: 120px;
+    margin: 10px 20px;
+    margin-right: 0;
+    /*background-color: yellow;*/
+    overflow: hidden;
+    border: 6px solid rgba(221, 221, 221, 0.5);
+    border-radius: 4px;
+}
+
+#hobby #div2 #draw_outer div:hover {
+    border-color: rgba(221, 221, 221, 1);
+}
+
+#hobby #div2 #draw_outer div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*z-index: 1;*/
+    display: inline-block;
+    width: 180px;
+    height: 120px;
+    background-color: rgba(100, 52, 18, 0.4);
+}
+
+#draw1 img {
+    position: relative;
+    top: -70%;
+    left: -20%;
+    width: 150%;
+}
+
+#draw2 img {
+    position: relative;
+    top: -70%;
+    left: -70%;
+    height: 250%;
+}
+
+#draw3 img {
+    position: relative;
+    top: -50%;
+    left: -30%;
+    width: 150%;
+}
+
+#draw4 img {
+    position: relative;
+    top: -100%;
+    left: -10%;
+    width: 110%;
+}
+
+#draw5 img {
+    position: relative;
+    top: -35%;
+    left: -60%;
+    height: 150%;
+}
+
+#draw6 img {
+    position: relative;
+    top: -30%;
+    left: -40%;
+    height: 200%;
+}
+
+#hobby #div5 #story_outer {
+    margin: 10px auto;
+    width: 450px;
+}
+
+#hobby #div5 #story_outer div {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 230px;
+    margin: 10px 20px;
+    margin-right: 0;
+    overflow: hidden;
+    border: 6px solid rgba(221, 221, 221, 0.5);
+    border-radius: 4px;
+}
+
+#hobby #div5 #story_outer div img {
+    position: absolute;
+    left: -50%;
+    width: 200%;
+    height: 250%;
+}
