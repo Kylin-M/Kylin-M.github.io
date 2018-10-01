@@ -5,6 +5,11 @@
     right: 50px;
 }
 
+.display_board #basic_info #map {
+    margin-top: 30px;
+    width: 450px;
+}
+
 .display_board #job_intention {
     position: absolute;
     top: 50px;

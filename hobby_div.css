@@ -92,7 +92,7 @@
 
 #draw4 img {
     position: relative;
-    top: -100%;
+    top: -110%;
     left: -10%;
     width: 110%;
 }
@@ -128,9 +128,16 @@
     border-radius: 4px;
 }
 
-#hobby #div5 #story_outer div img {
+#hobby #div5 #story_outer #story1 img {
     position: absolute;
-    left: -50%;
+    left: -9%;
+    top: -82%;
+    width: 120%;
+}
+
+#hobby #div5 #story_outer #story2 img {
+    position: absolute;
+    left: -65%;
+    top: -5%;
     width: 200%;
-    height: 250%;
 }
