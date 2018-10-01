@@ -34,11 +34,11 @@ function init() {
     hobby_div[3] = document.getElementById('div4');
     hobby_div[4] = document.getElementById('div5');
 
-    // click_label(li[0]);
-    // move_label(li[0]);
+    click_label(li[0]);
+    move_label(li[0]);
 
-    click_label(li[4]);
-    move_label(li[4]);
+    // click_label(li[4]);
+    // move_label(li[4]);
 
 }
 
@@ -77,7 +77,7 @@ function click_label(obj) {
         case li[4]:
             board_hidden(4);
             change_focus(4);
-            click_hobby_nav(hobby_nav[1]);
+            click_hobby_nav(hobby_nav[0]);
             break;
     }
 }
