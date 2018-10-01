@@ -100,7 +100,9 @@ function choiceMusic(obj) {//选择播放
 }
 
 function changePlayerTitle() {//改变播放器标题
-    document.getElementById('bgm_name').innerText = document.getElementById('myAudio').src.slice(36);
+    //document.getElementById('bgm_name').innerText = document.getElementById('myAudio').src.slice(36);
+    str = document.getElementById('myAudio').src.split('/');
+    document.getElementById('bgm_name').innerText = str[str.length - 1];
 }
 
 function cTime(time) {//转换显示的时间格式
