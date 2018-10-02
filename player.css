@@ -1,7 +1,7 @@
 #player_bg {
     position: absolute;
-    top: 150px;
-    right: 95px;
+    top: 60px;
+    right: 25px;
     z-index: 10;
     width: 310px;
     height: 100px;
@@ -131,8 +131,8 @@
 
 .list_bg {
     position: absolute;
-    top: 258px;
-    right: 95px;
+    top: 168px;
+    right: 25px;
     z-index: 10;
     width: 310px;
     border-radius: 5px;

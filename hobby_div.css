@@ -55,7 +55,7 @@
 }
 
 #hobby #div2 #draw_outer div:hover {
-    border-color: rgba(221, 221, 221, 1);
+    /*border-color: rgba(221, 221, 221, 1);*/
 }
 
 #hobby #div2 #draw_outer div span {

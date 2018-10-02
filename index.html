@@ -18,6 +18,40 @@
     <div class="header">
         <p class="phone_num">Tel : 18860873081</p>
         <p class="email">Email : 464465548@qq.com</p>
+        <!--音乐播放器-->
+        <audio id="myAudio" controls hidden></audio>
+        <div id="player_bg">
+            <div id="player_icon"></div>
+            <div id="bgm_name">BGM.MP3</div>
+            <div id="player_bt">
+                <div id="player_last" onmouseover="changeButtonIcon(this, true)"
+                     onmouseleave="changeButtonIcon(this, false)" onclick="lastMusic()"></div>
+                <div id="play_stop" onmouseover="changeButtonIcon(this, true)" onmouseleave="changeButtonIcon(this, false)"
+                     onclick="bf()"></div>
+                <div id="player_next" onmouseover="changeButtonIcon(this, true)"
+                     onmouseleave="changeButtonIcon(this, false)" onclick="nextMusic()"></div>
+                <div id="player_voice" onmouseover="changeButtonIcon(this, true)"
+                     onmouseleave="changeButtonIcon(this, false)" onclick="mute()"></div>
+                <div id="player_list" onmouseover="changeButtonIcon(this, true)"
+                     onmouseleave="changeButtonIcon(this, false)" onclick="show_playerList();init_bgmList();"></div>
+            </div>
+            <div id="display">0:00 / 0:00</div>
+            <div id="progressBar">
+                <div id="fill"></div>
+                <div id="slider"></div>
+            </div>
+        </div>
+
+        <!--播放列表-->
+        <div id="playlist" class="list_bg" style="visibility: collapse">
+            <ul>
+                <li id="m0" ondblclick="choiceMusic(this)"><a>第1首</a></li>
+                <li id="m1" ondblclick="choiceMusic(this)"><a>第2首</a></li>
+                <li id="m2" ondblclick="choiceMusic(this)"><a>第3首</a></li>
+                <li id="m3" ondblclick="choiceMusic(this)"><a>第4首</a></li>
+                <!--<li id="m4" ondblclick="choiceMusic(this)"><a>第5首</a></li>-->
+            </ul>
+        </div>
     </div>
 
     <div class="nav">
@@ -72,12 +106,12 @@
                 <p>
                     业余水平，但也是从小到大的一点点爱好，没有机会专门学绘画，就自己偶尔随便画一画。做UI写前端的时候也经常自己画或者找来素材用PS改一改，有时候也会用来修一修照片图片什么的，我觉得画画和PS都是是一件让人十分开心的事情。</p>
                 <div id="draw_outer" class="clearfix">
-                    <div id="draw1" onmouseover="draw_hover(this)"><span></span><img src="draw/draw1.png"></div>
-                    <div id="draw2" onmouseover="draw_hover(this)"><span></span><img src="draw/draw2.png"></div>
-                    <div id="draw3" onmouseover="draw_hover(this)"><span></span><img src="draw/draw3.png"></div>
-                    <div id="draw4" onmouseover="draw_hover(this)"><span></span><img src="draw/draw4.jpg"></div>
-                    <div id="draw5" onmouseover="draw_hover(this)"><span></span><img src="draw/draw5.jpg"></div>
-                    <div id="draw6" onmouseover="draw_hover(this)"><span></span><img src="draw/draw6.jpg"></div>
+                    <div id="draw1" onmouseover="draw_hover(this)"><span></span><img></div>
+                    <div id="draw2" onmouseover="draw_hover(this)"><span></span><img></div>
+                    <div id="draw3" onmouseover="draw_hover(this)"><span></span><img></div>
+                    <div id="draw4" onmouseover="draw_hover(this)"><span></span><img></div>
+                    <div id="draw5" onmouseover="draw_hover(this)"><span></span><img></div>
+                    <div id="draw6" onmouseover="draw_hover(this)"><span></span><img></div>
                 </div>
             </div>
             <div id="div3">
@@ -100,48 +134,14 @@
             <div id="div5">
                 <p>看的文多了当然也会有很多想法，也会想要自己写点什么，睡前写文十分有助于睡眠。</p>
                 <div id="story_outer">
-                    <div id="story1"><img src="draw/story1.jpg"></div>
-                    <div id="story2"><img src="draw/story2.jpg"></div>
+                    <div id="story1"><img></div>
+                    <div id="story2"><img></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="float_leaf"></div>
-<!--音乐播放器-->
-<audio id="myAudio" controls hidden></audio>
-<div id="player_bg">
-    <div id="player_icon"></div>
-    <div id="bgm_name">BGM.MP3</div>
-    <div id="player_bt">
-        <div id="player_last" onmouseover="changeButtonIcon(this, true)"
-             onmouseleave="changeButtonIcon(this, false)" onclick="lastMusic()"></div>
-        <div id="play_stop" onmouseover="changeButtonIcon(this, true)" onmouseleave="changeButtonIcon(this, false)"
-             onclick="bf()"></div>
-        <div id="player_next" onmouseover="changeButtonIcon(this, true)"
-             onmouseleave="changeButtonIcon(this, false)" onclick="nextMusic()"></div>
-        <div id="player_voice" onmouseover="changeButtonIcon(this, true)"
-             onmouseleave="changeButtonIcon(this, false)" onclick="mute()"></div>
-        <div id="player_list" onmouseover="changeButtonIcon(this, true)"
-             onmouseleave="changeButtonIcon(this, false)" onclick="show_playerList();init_bgmList();"></div>
-    </div>
-    <div id="display">0:00 / 0:00</div>
-    <div id="progressBar">
-        <div id="fill"></div>
-        <div id="slider"></div>
-    </div>
-</div>
-
-<!--播放列表-->
-<div id="playlist" class="list_bg" style="visibility: collapse">
-    <ul>
-        <li id="m0" ondblclick="choiceMusic(this)"><a>第1首</a></li>
-        <li id="m1" ondblclick="choiceMusic(this)"><a>第2首</a></li>
-        <li id="m2" ondblclick="choiceMusic(this)"><a>第3首</a></li>
-        <li id="m3" ondblclick="choiceMusic(this)"><a>第4首</a></li>
-        <li id="m4" ondblclick="choiceMusic(this)"><a>第5首</a></li>
-    </ul>
-</div>
 
 <script type="text/javascript" src="player.js"></script>
 <script type="text/javascript" src="draw_shade.js"></script>

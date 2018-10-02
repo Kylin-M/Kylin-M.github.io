@@ -1,19 +1,17 @@
 //初始化全局变量
-bgmList = new Array(5);
+bgmList = new Array(4);
 bgmList[0] = "music/Begin.mp3";
 bgmList[1] = "music/WhenTheLightComes.mp3";
 bgmList[2] = "music/Clsr.mp3";
 bgmList[3] = "music/TimeTravel.mp3";
-bgmList[4] = "music/KimiWoOmouMelodi.mp3";
 
+play_flag = true;//是否为首次播放
 index = 0;//播放曲目数组下标
 audio = document.getElementById('myAudio');
-audio.src = bgmList[0];
 
 minute = 0;
 second = 0;
 
-// icon_margin_left = document.getElementById('self-icon').offsetLeft;
 icon_margin_left = 395;
 i = -3;
 
@@ -48,6 +46,11 @@ function init_bgmList() {//初始化播放列表
 }
 
 function bf() {//播放、暂停
+    if (play_flag == true) {
+        index = 0;//播放曲目数组下标
+        audio.src = bgmList[index];
+        play_flag = false;
+    }
     showTime();
     if (audio !== null) {
         if (audio.paused) {
@@ -91,7 +94,6 @@ function mute() {//静音
     audio.muted = !audio.muted;
 }
 
-/* 直接选择播放，index的值未改变，再点击切换歌曲时会出现问题 未解决问题 */
 function choiceMusic(obj) {//选择播放
     index = Number(obj.id.slice(1));//根据li的id得到bgmList的序号值
     audio.src = bgmList[index];
@@ -100,7 +102,6 @@ function choiceMusic(obj) {//选择播放
 }
 
 function changePlayerTitle() {//改变播放器标题
-    //document.getElementById('bgm_name').innerText = document.getElementById('myAudio').src.slice(36);
     str = document.getElementById('myAudio').src.split('/');
     document.getElementById('bgm_name').innerText = str[str.length - 1];
 }

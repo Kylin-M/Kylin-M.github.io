@@ -1,13 +1,15 @@
+.header p {
+    color: white;
+}
+
 .header .phone_num {
     position: relative;
-    top: 235px;
+    bottom: -200px;
     left: 320px;
-    color: snow;
 }
 
 .header .email {
     position: relative;
-    top: 250px;
+    bottom: -215px;
     left: 320px;
-    color: seashell;
 }

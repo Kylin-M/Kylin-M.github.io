@@ -109,6 +109,18 @@ function click_hobby_nav(obj) {
     for (var i = 0; i < hobby_nav.length; i++) {
         if (obj == hobby_nav[i]) {
             change_hobby_display(i);
+            if (i == 1) {
+                document.getElementById('draw1').lastChild.src = "draw/draw1.png";
+                document.getElementById('draw2').lastChild.src = "draw/draw2.png";
+                document.getElementById('draw3').lastChild.src = "draw/draw3.png";
+                document.getElementById('draw4').lastChild.src = "draw/draw4.jpg";
+                document.getElementById('draw5').lastChild.src = "draw/draw5.jpg";
+                document.getElementById('draw6').lastChild.src = "draw/draw6.jpg";
+            }
+            else if (i == 4) {
+                document.getElementById('story1').firstChild.src = "draw/story1.jpg";
+                document.getElementById('story2').firstChild.src = "draw/story2.jpg";
+            }
         }
     }
 }
