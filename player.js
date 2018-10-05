@@ -1,7 +1,7 @@
 //初始化全局变量
 bgmList = new Array(4);
 bgmList[0] = "music/Begin.mp3";
-bgmList[1] = "music/WhenTheLightComes.mp3";
+bgmList[1] = "music/SummerLawns.mp3";
 bgmList[2] = "music/Clsr.mp3";
 bgmList[3] = "music/TimeTravel.mp3";
 

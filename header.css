@@ -1,15 +1,22 @@
 .header p {
     color: white;
+    line-height: 31px;
+}
+
+.header .name {
+    position: relative;
+    bottom: -180px;
+    left: 320px;
 }
 
 .header .phone_num {
     position: relative;
-    bottom: -200px;
+    bottom: -185px;
     left: 320px;
 }
 
 .header .email {
     position: relative;
-    bottom: -215px;
+    bottom: -190px;
     left: 320px;
 }
