@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="player.css">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="display.css">
     <link rel="stylesheet" type="text/css" href="hobby_div.css">
 
+    <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="js.js"></script>
 
     <title>Resume</title>
@@ -27,14 +29,15 @@
             <div id="player_bt">
                 <div id="player_last" onmouseover="changeButtonIcon(this, true)"
                      onmouseleave="changeButtonIcon(this, false)" onclick="lastMusic()"></div>
-                <div id="play_stop" onmouseover="changeButtonIcon(this, true)" onmouseleave="changeButtonIcon(this, false)"
+                <div id="play_stop" onmouseover="changeButtonIcon(this, true)"
+                     onmouseleave="changeButtonIcon(this, false)"
                      onclick="bf()"></div>
                 <div id="player_next" onmouseover="changeButtonIcon(this, true)"
                      onmouseleave="changeButtonIcon(this, false)" onclick="nextMusic()"></div>
                 <div id="player_voice" onmouseover="changeButtonIcon(this, true)"
                      onmouseleave="changeButtonIcon(this, false)" onclick="mute()"></div>
                 <div id="player_list" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)" onclick="show_playerList();init_bgmList();"></div>
+                     onmouseleave="changeButtonIcon(this, false)" onclick=""></div>
             </div>
             <div id="display">0:00 / 0:00</div>
             <div id="progressBar">
@@ -44,13 +47,12 @@
         </div>
 
         <!--播放列表-->
-        <div id="playlist" class="list_bg" style="visibility: collapse">
+        <div id="playlist" class="list_bg">
             <ul>
                 <li id="m0" ondblclick="choiceMusic(this)"><a>第1首</a></li>
                 <li id="m1" ondblclick="choiceMusic(this)"><a>第2首</a></li>
                 <li id="m2" ondblclick="choiceMusic(this)"><a>第3首</a></li>
                 <li id="m3" ondblclick="choiceMusic(this)"><a>第4首</a></li>
-                <!--<li id="m4" ondblclick="choiceMusic(this)"><a>第5首</a></li>-->
             </ul>
         </div>
     </div>
@@ -78,7 +80,8 @@
         </div>
         <div id="education_exp">
             <p>江苏大学 软件工程 本科</p>
-            <p style="font-size: 18px;font-style: italic;border-top: 1px solid white;border-bottom: 1px solid white">○ 2015/09 —— 2019/07</p>
+            <p style="font-size: 18px;font-style: italic;border-top: 1px solid white;border-bottom: 1px solid white">○
+                2015/09 —— 2019/07</p>
             <p>在校期间学习了JAVA/C++/Android/C#/XML等语言课程。</p>
             <p>以及数据结构/算法/数据库/编译原理/操作系统/设计模式/计算机网络/软件工程/需求工程等多门专业相关课程。</p>
             <p>曾担任组织宣传委员，负责和团支书一起组织开展班级内的各项活动，撰写活动报告等。</p>

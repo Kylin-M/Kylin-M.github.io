@@ -1,7 +1,7 @@
 //初始化全局变量
 bgmList = new Array(4);
-bgmList[0] = "music/Begin.mp3";
-bgmList[1] = "music/SummerLawns.mp3";
+bgmList[0] = "music/SummerLawns.mp3";
+bgmList[1] = "music/Begin.mp3";
 bgmList[2] = "music/Clsr.mp3";
 bgmList[3] = "music/TimeTravel.mp3";
 
@@ -32,18 +32,24 @@ function showTime() {
     window.setTimeout("showTime()", 1000);
 }
 
-function show_playerList() {//显示、隐藏播放列表
-    if (document.getElementById('playlist').style.visibility === "collapse") {
-        document.getElementById('playlist').style.visibility = "visible";
-    }
-    else document.getElementById('playlist').style.visibility = "collapse";
-}
 
-function init_bgmList() {//初始化播放列表
-    for (var i = 0; i < bgmList.length; i++) {
-        document.getElementById('m' + i).innerHTML = bgmList[i].slice(6);
-    }
-}
+$(document).ready(function () {
+    $("#playlist li").slideUp(0);//加载后先收起来
+    $("#player_list").unbind("click").click(function () {
+        for (var i = 0; i < bgmList.length; i++) {
+            document.getElementById('m' + i).innerHTML = bgmList[i].slice(6);
+        }//加载歌曲名
+        var index = 0;
+        var speed = 500;
+        var playlist = $("#playlist li");
+        var timer = setInterval(function () {
+            if (index < playlist.length) {
+                playlist.eq(index++).slideToggle(speed);
+            }
+            else clearInterval(timer);
+        }, 200);
+    });
+});
 
 function bf() {//播放、暂停
     if (play_flag == true) {

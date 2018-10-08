@@ -110,7 +110,7 @@
 #fill {
     position: absolute;
     display: inline-block;
-    left: 0px;
+    left: 0;
     width: 0;
     height: 4px;
     border-radius: 5px;
@@ -144,6 +144,7 @@
 }
 
 .list_bg li {
+    height: 20px;
     border-style: dotted none;
     border-width: 0.5px;
     border-color: #a15f65;
