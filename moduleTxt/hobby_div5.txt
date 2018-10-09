@@ -1,0 +1,5 @@
+<p>看的文多了当然也会有很多想法，也会想要自己写点什么，睡前开脑洞写文有助于睡眠。</p>
+<div id="story_outer">
+<div id="story1"><img></div>
+<div id="story2"><img></div>
+</div>

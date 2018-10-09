@@ -36,10 +36,6 @@ function init() {
 
     click_label(li[0]);
     move_label(li[0]);
-
-    // click_label(li[4]);
-    // move_label(li[4]);
-
 }
 
 function move_label(obj) {
@@ -61,18 +57,26 @@ function click_label(obj) {
         case li[0]:
             board_hidden(0);
             change_focus(0);
+            var basic_info = $.ajax({url: "moduleTxt/basic_info.txt", async: false});
+            $("#basic_info").html(basic_info.responseText);
             break;
         case li[1]:
             board_hidden(1);
             change_focus(1);
+            var job_intention = $.ajax({url: "moduleTxt/job_intention.txt", async: false});
+            $("#job_intention").html(job_intention.responseText);
             break;
         case li[2]:
             board_hidden(2);
             change_focus(2);
+            var education_exp = $.ajax({url: "moduleTxt/education_exp.txt", async: false});
+            $("#education_exp").html(education_exp.responseText);
             break;
         case li[3]:
             board_hidden(3);
             change_focus(3);
+            var self_evaluation = $.ajax({url: "moduleTxt/self_evaluation.txt", async: false});
+            $("#self_evaluation").html(self_evaluation.responseText);
             break;
         case li[4]:
             board_hidden(4);
@@ -108,6 +112,13 @@ function click_hobby_nav(obj) {
     display_board[4].removeAttribute('style');
     for (var i = 0; i < hobby_nav.length; i++) {
         if (obj == hobby_nav[i]) {
+            var hobby_txt = new Array(5);
+            hobby_txt[0] = $.ajax({url: "moduleTxt/hobby_div1.txt", async: false});
+            hobby_txt[1] = $.ajax({url: "moduleTxt/hobby_div2.txt", async: false});
+            hobby_txt[2] = $.ajax({url: "moduleTxt/hobby_div3.txt", async: false});
+            hobby_txt[3] = $.ajax({url: "moduleTxt/hobby_div4.txt", async: false});
+            hobby_txt[4] = $.ajax({url: "moduleTxt/hobby_div5.txt", async: false});
+            $("#hobby").children("div").eq(i + 1).html(hobby_txt[i].responseText);
             change_hobby_display(i);
             if (i == 1) {
                 document.getElementById('draw1').lastChild.src = "draw/draw1.png";

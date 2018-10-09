@@ -1,0 +1,8 @@
+#job_intention a {
+    text-underline: none;
+    color: rgb(255, 135, 80);
+}
+
+#job_intention a:hover {
+    color: rgb(247, 171, 46);
+}

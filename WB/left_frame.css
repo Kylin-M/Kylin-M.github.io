@@ -1,0 +1,438 @@
+.left_frame {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+}
+
+.left_frame_small {
+    position: fixed;
+    top: 0;
+    left: -340px;
+    width: 300px;
+    padding: 20px;
+    z-index: 9998;
+    overflow: scroll;
+    border-top: 2px solid #ff7126;
+    background-color: #f2f2f5;
+}
+
+.W_fold {
+    position: fixed;
+    left: 0;
+    bottom: 140px;
+    width: 40px;
+    height: 40px;
+    z-index: 9997;
+}
+
+.W_fold .fold {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 0 50% 50% 0;
+    background-color: #f38f5c;
+}
+
+.pcd_counter {
+    /* 使内部元素垂直居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    /*  */
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.pcd_counter .tb_counter {
+    width: 300px;
+    height: 36px;
+    position: relative;
+    right: 1px;
+}
+
+.tb_counter .W_f18 {
+    display: block;
+}
+
+.tb_counter .S_txt2 {
+    font-size: 12px;
+    color: #808080;
+}
+
+.tb_counter td {
+    width: 36px;
+    border-left: 1px solid #d9d9d9;
+    background-color: white;
+}
+
+.tb_counter td:hover {
+    color: #fa6342;
+}
+
+.S_txt1 {
+    display: block;
+}
+
+.S_txt1:link {
+    color: #333333;
+}
+
+.S_txt1:visited {
+    color: #333333;
+}
+
+.S_txt1:hover {
+    color: #fa6342;
+}
+
+.pcd_person_info {
+    margin-top: 16px;
+    width: 300px;
+    height: 156px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.pcd_person_info_div1 {
+    position: relative;
+    width: 300px;
+    height: 62px;
+    font-size: 12px;
+}
+
+.pcd_person_info_div1 .verify_clearfix {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    width: 268px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.pcd_person_info_div1 .icon_bed {
+    display: inline-block;
+    margin-right: 10px;
+    border-right: 1px solid #d9d9d9;
+    width: 58px;
+    height: 28px;
+}
+
+.pcd_person_info_div1 .icon_group {
+    width: 79px;
+    height: 28px;
+}
+
+.pcd_person_info_div1 .info {
+    position: relative;
+    top: 61px;
+    width: 300px;
+    height: 1px;
+    background-color: #f2f2f5;
+}
+
+.icon_group .W_icon_level {
+    width: 33px;
+    height: 14px;
+    border-radius: 8px;
+    background-color: #ff1200;
+}
+
+.icon_group .W_icon_level span {
+    font-style: italic;
+    color: white;
+}
+
+.icon_group .W_icon_yy {
+    width: 12px;
+    height: 14px;
+    background-color: red;
+}
+
+.pcd_person_info_div2 {
+    position: relative;
+    width: 300px;
+    height: 58px;
+}
+
+.pcd_person_info_div2 .m_wrap {
+    position: absolute;
+    top: 16px;
+    left: 13.5px;
+    width: 268px;
+    height: 31px;
+}
+
+.pcd_person_info_div2 .bars_box .bar_title {
+    color: #333333;
+    font-size: 12px;
+}
+
+.pcd_person_info_div2 .bars_box .num {
+    margin-left: 5px;
+    color: #333333;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.pcd_person_info_div2 .bars_box .bar_box {
+    margin-top: 4px;
+    width: 268px;
+    height: 4px;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #f2f2f5;
+}
+
+.pcd_person_info_div2 .bars_box .bar_box .bar {
+    width: 134px;
+    height: 4px;
+    background-color: #fa7d3c;
+}
+
+.pcd_person_info_div3 {
+    width: 300px;
+    height: 36px;
+}
+
+.pcd_person_info_div3 .info {
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: #dedede;
+}
+
+.pcd_person_info_div3 .WB_cardmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 35px;
+}
+
+.pcd_person_info_div3 .WB_cardmore .S_line1 {
+    display: block;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.pcd_person_info_div3 .WB_cardmore .more_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+
+.pcd_photolist {
+    margin-top: 16px;
+    width: 300px;
+    height: 375px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.pcd_photolist .pcd_photolist_title {
+    width: 300px;
+    height: 39px;
+}
+
+.pcd_photolist .pcd_photolist_title h4 {
+    display: block;
+    margin-left: 16px;
+    padding-top: 12.5px;
+    width: 268px;
+    height: 39px;
+    font-size: 14px;
+}
+
+.pcd_photolist .pcd_photolist_title .info {
+    position: relative;
+    top: -14px;
+    width: 300px;
+    height: 1px;
+    background-color: #f2f2f5;
+}
+
+.pcd_photolist .pcd_photolist_innerwrap {
+    width: 300px;
+    height: 300px;
+}
+
+.pcd_photolist .pcd_photolist_innerwrap .pic {
+    position: relative;
+    text-align: center;
+    left: 6px;
+    top: 6px;
+    width: 294px;
+    height: 294px;
+}
+
+.pcd_photolist .pcd_photolist_innerwrap .pic li {
+    display: inline-block;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    width: 92px;
+    height: 92px;
+    color: white;
+    background-image: url("image/rec.png");
+}
+
+.pcd_photolist .pcd_photolist_innerwrap .pic .pic_first {
+    display: inline-block;
+    width: 190px;
+    height: 190px;
+    background-image: url("image/rec.png");
+}
+
+.pcd_photolist .pcd_morephoto {
+    width: 300px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.pcd_photolist .pcd_morephoto .info {
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: #f2f2f5;
+}
+
+.pcd_photolist .pcd_morephoto .WB_cardmore {
+    display: block;
+    width: 300px;
+    height: 36px;
+    font-size: 12px;
+}
+
+.pcd_photolist .pcd_morephoto .WB_cardmore .more_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.pcd_pictect_f {
+    margin-top: 16px;
+    width: 300px;
+    height: 179px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.pcd_pictect_f .obj_name {
+    margin-left: 16px;
+    width: 268px;
+    height: 38px;
+}
+
+.pcd_pictect_f .obj_name .main_title {
+    font-size: 14px;
+    line-height: 38px;
+    color: #333333;
+}
+
+.pcd_pictect_f .WB_innerwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 104px;
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt ::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 288px;
+    height: 92px;
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt .pic_box {
+    display: inline-block;
+    float: left;
+    width: 92px;
+    height: 92px;
+    background-image: url("image/rec.png");
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt .text_box {
+    display: inline-block;
+    float: left;
+    width: 180px;
+    height: 80px;
+    padding: 6px 8px;
+    font-size: 12px;
+    background-color: #f2f2f5;
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt .text_box .title {
+    line-height: 16px;
+}
+
+.pcd_pictect_f .WB_innerwrap .pic_txt .text_box .text {
+    line-height: 18px;
+}
+
+.pcd_pictect_f .WB_cardmore {
+    width: 300px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+}
+
+.pcd_pictect_f .WB_cardmore a {
+    display: block;
+    width: 300px;
+    height: 36px;
+}
+
+.pcd_pictect_f .WB_cardmore .more_txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.info1 {
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: #f2f2f5;
+}
+
+.info2 {
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: #dedede;
+}
+
+#w_fold .fold em {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0);
+    background-image: url("image/next.png");
+    background-size: 100%;
+}

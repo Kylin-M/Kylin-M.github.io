@@ -1,0 +1,5 @@
+<p>江苏大学 软件工程 本科</p>
+<p style="font-size: 18px;font-style: italic;border-top: 1px solid white;border-bottom: 1px solid white">○ 2015/09 —— 2019/07</p>
+<p>在校期间学习了JAVA/C++/Android/C#/XML等语言课程。</p>
+<p>以及数据结构/算法/数据库/编译原理/操作系统/设计模式/计算机网络/软件工程/需求工程等多门专业相关课程。</p>
+<p>曾担任组织宣传委员，负责和团支书一起组织开展班级内的各项活动，撰写活动报告等。</p>
