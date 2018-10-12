@@ -15,10 +15,18 @@
 
 .nav .nav_bottom {
     position: fixed;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 48px;
     background-color: rgba(255, 255, 255, 1);
+}
+
+.nav .nav_bottom .header {
+    min-width: 760px;
+    width: 100%;
+    max-width: 1280px;
 }
 
 .nav_bottom .logo {
@@ -38,11 +46,11 @@
     position: relative;
     display: block;
     float: left;
-    width: 20%;
     min-width: 160px;
+    width: 20%;
+    max-width: 870px;
     height: 28px;
     line-height: 15.6px;
-    margin-left: 5%;
     margin-top: 9px;
 }
 
@@ -73,41 +81,36 @@
 .nav_bottom .position {
     position: relative;
     display: block;
-    float: left;
+    float: right;
     height: 48px;
-    width: 55%;
-    min-width: 380px;
-    overflow: hidden;
+    min-width: 460px;
+    width: 60%;
+    max-width:870px;
 }
 
 .nav_bottom .position .pnav {
+    float: left;
     position: absolute;
     display: block;
-    width: 70%;
     white-space: nowrap;
     height: 26px;
-    margin: 11px 18px;
-    margin-left: 0;
-    float: left;
-    overflow: hidden;
+    margin-top: 11px;
+    margin-bottom: 11px;
 }
 
 .nav_bottom .position .pnav .pnav_list {
     list-style-type: none;
     display: block;
-    padding-right: 40px;
-    width: 100%;
-    min-width: 300px;
+    padding-right: 20px;
     height: 26px;
     border-right: 1px solid #d9d9d9;
-
 }
 
 .nav_bottom .position .pnav .pnav_list li {
     float: left;
     width: 54px;
     height: 26px;
-    margin-left: 5%;
+    margin-left: 26px;
     font-size: 14px;
     line-height: 18px;
 }
@@ -164,7 +167,7 @@
     right: 0;
     min-width: 128px;
     height: 24px;
-    margin: 12px 0;
+    margin: 12px 20px;
 }
 
 .nav_bottom .position .set .set_list {
