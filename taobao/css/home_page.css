@@ -1,0 +1,246 @@
+#nav_top {
+    width: 100%;
+    min-width: 320px;
+    height: 7.5%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    color: white;
+    background: -webkit-linear-gradient(to right, #ff8a00, #ff2000); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, #ff8a00, #ff2000); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, #ff8a00, #ff2000);; /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #ff8a00, #ff2000);
+}
+
+#nav_top a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#nav_top > div {
+    width: 15%;
+    height: 68.7%;
+    color: green;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#nav_top .nav_top_text {
+    display: block;
+    margin-top: 2px;
+}
+
+#nav_top a img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+#nav_top #search {
+    width: 55%;
+    height: 68.7%;
+    border-radius: 150px;
+    display: block;
+    position: relative;
+    background-color: white;
+}
+
+#search input {
+    height: 65%;
+    width: 65%;
+    padding: 5px;
+    margin-left: 15%;
+    float: left;
+    display: block;
+    position: absolute;
+    color: #9d9a9c;
+    border: none;
+    outline: none;
+}
+
+#icon_search {
+    height: 40%;
+    float: left;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#icon_photo_search {
+    height: 40%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#home_page {
+    position: fixed;
+    top: 7.5%;
+    width: 100%;
+    min-width: 320px;
+    background-color: #fafafa;
+    overflow: scroll;
+}
+
+/*#home_page #white_block {*/
+/*position: relative;*/
+/*z-index: 11;*/
+/*display: block;*/
+/*width: 100%;*/
+/*min-height: 42.6px;*/
+/*height: 7.5%;*/
+/*background-color: rgba(0, 255, 0, 0.8);*/
+/*}*/
+
+#home_page #scroll_box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#home_page #scroll_box ul {
+    width: 400%;
+}
+
+#scroll_box #img_list li {
+    width: 25%;
+    display: block;
+    float: left;
+}
+
+#scroll_box img {
+    width: 100%;
+}
+
+#scroll_box #bt_change_img {
+    position: absolute;
+    max-width: 320px;
+    z-index: 1;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#scroll_box #bt_change_img li {
+    float: left;
+    width: 10%;
+    min-height: 16px;
+    max-width: 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.title {
+    color: #545454;
+    font-size: 0.5em;
+}
+
+.title_tint {
+    color: #767676;
+    font-size: 0.4em;
+}
+
+#my_channel {
+    width: 100%;
+    height: 25%;
+    background-color: #fafafa;
+    overflow: scroll;
+}
+
+#channel_top:before {
+    content: "";
+    display: block;
+    background-color: #fafafa;
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#channel_top {
+    width: 100%;
+    margin-top: -10px;
+    background-color: #fafafa;
+}
+
+#channel_top span {
+    margin-left: 10px;
+}
+
+#channel_top img {
+    float: right;
+    width: 4em;
+    /*height: */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#channel_top button {
+    float: right;
+    padding: 1px 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#channel_show {
+    width: 160%;
+    margin: 10px 0;
+}
+
+#channel_show div {
+    float: left;
+    padding-top: 10px;
+    width: 12.5%;
+    text-align: center;
+}
+
+#channel_show a {
+    display: block;
+    text-decoration: none;
+}
+
+#channel_show span {
+    display: block;
+}
+
+#channel_show img {
+    width: 60%;
+}
+
+#sales_promotion {
+    width: 100%;
+}
+
+#sales_promotion div {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#sales_promotion img {
+    width: 90%;
+}
+
+#tb_news {
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+}
+
+#tb_news .tb_news_show img {
+    width: 50%;
+}
