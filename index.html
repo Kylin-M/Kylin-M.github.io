@@ -1,107 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <script src="jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="player.css">
-    <link rel="stylesheet" type="text/css" href="header.css">
-    <link rel="stylesheet" type="text/css" href="display.css">
-    <link rel="stylesheet" type="text/css" href="hobby_div.css">
-    <link rel="stylesheet" type="text/css" href="job_intention.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>resume</title>
+  <style>
+    html, body {
+      min-width: 1000px;
+      max-width: 1400px;
+      height: 100%;
+    }
 
-    <script type="text/javascript" src="js.js"></script>
+    html, body, div, p, span, ul, li, a {
+      margin: 0;
+      padding: 0;
+    }
 
-    <title>Resume</title>
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body onload="init()">
-<div class="page clearfix">
-    <div class="header">
-        <p class="name">Name : 李梦</p>
-        <p class="phone_num">Tel : 18860873081</p>
-        <p class="email">Email : 464465548@qq.com</p>
-        <!--音乐播放器-->
-        <audio id="myAudio" autoplay="autoplay" controls hidden></audio>
-        <div id="player_bg">
-            <div id="player_icon"></div>
-            <div id="bgm_name">BGM.MP3</div>
-            <div id="player_bt">
-                <div id="player_last" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)" onclick="lastMusic()"></div>
-                <div id="play_stop" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)"
-                     onclick="bf()"></div>
-                <div id="player_next" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)" onclick="nextMusic()"></div>
-                <div id="player_voice" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)" onclick="mute()"></div>
-                <div id="player_list" onmouseover="changeButtonIcon(this, true)"
-                     onmouseleave="changeButtonIcon(this, false)" onclick=""></div>
-            </div>
-            <div id="display">0:00 / 0:00</div>
-            <div id="progressBar">
-                <div id="fill"></div>
-                <div id="slider"></div>
-            </div>
-        </div>
-
-        <!--播放列表-->
-        <div id="playlist" class="list_bg">
-            <ul>
-                <li id="m0" ondblclick="choiceMusic(this)"><a>第1首</a></li>
-                <li id="m1" ondblclick="choiceMusic(this)"><a>第2首</a></li>
-                <li id="m2" ondblclick="choiceMusic(this)"><a>第3首</a></li>
-                <li id="m3" ondblclick="choiceMusic(this)"><a>第4首</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="nav">
-        <div class="photo"></div>
-        <ul id="list">
-            <li id="li1" onclick="move_label(this);click_label(this);"><span></span><a id="label1">基本信息</a></li>
-            <li id="li2" onclick="move_label(this);click_label(this);"><span></span><a id="label2">求职意向</a></li>
-            <li id="li3" onclick="move_label(this);click_label(this);"><span></span><a id="label3">教育经历</a></li>
-            <li id="li4" onclick="move_label(this);click_label(this);"><span></span><a id="label4">自我评价</a></li>
-            <li id="li5" onclick="move_label(this);click_label(this);"><span></span><a id="label5">特长爱好</a></li>
-        </ul>
-    </div>
-    <div class="display_board">
-        <div id="basic_info">
-        </div>
-        <div id="job_intention">
-        </div>
-        <div id="education_exp">
-        </div>
-        <div id="self_evaluation">
-        </div>
-        <div id="hobby" class="clearfix">
-            <div class="hobby_nav">
-                <ul>
-                    <li id="hobby_l1" onclick="click_hobby_nav(this)"><a>看书</a></li>
-                    <li id="hobby_l2" onclick="click_hobby_nav(this)"><a>画画</a></li>
-                    <li id="hobby_l3" onclick="click_hobby_nav(this)"><a>游戏</a></li>
-                    <li id="hobby_l4" onclick="click_hobby_nav(this)"><a>电影</a></li>
-                    <li id="hobby_l5" onclick="click_hobby_nav(this)"><a>写小说</a></li>
-                </ul>
-            </div>
-            <div id="div1">
-            </div>
-            <div id="div2">
-            </div>
-            <div id="div3">
-            </div>
-            <div id="div4">
-            </div>
-            <div id="div5">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="float_leaf"></div>
-
-<script type="text/javascript" src="player.js"></script>
-<script type="text/javascript" src="draw_shade.js"></script>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
 </body>
 </html>

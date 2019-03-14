@@ -1,0 +1,47 @@
+.clear-fix:after {
+  content: '.';
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.content {
+  width: calc(100% - 6 / 70 * 100%);
+  min-width: 400px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  background-image: url("../image/container_bg.png");
+  background-size: auto 100%;
+  color: #502727;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.header {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+}
+
+.header p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
